@@ -14,7 +14,7 @@
     <httpOptions maxKeepAliveRequests="-1"/>
   </httpEndpoint> -->
 
-  <mpMetrics authentication="false" />
+ <!--  <mpMetrics authentication="false" /> -->
   
 <!-- This is new property for 4Q to make JAPSIC application works like non-JAPIC -->
 <webAppSecurity useLtpaSSOForJaspic="true" />
