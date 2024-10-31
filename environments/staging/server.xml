@@ -1,3 +1,4 @@
+<server description="QuickSec">
 <!-- It is ok to use the below LDAP server but make sure to use the correct trust store so that LDAP connection can be on SSL -->
 
 	<!-- Enable features -->
@@ -9,15 +10,15 @@
 	    
    </featureManager>
 
-  <!-- <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"> 
+  <httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"> 
     <tcpOptions soReuseAddr="true"/> 
     <httpOptions maxKeepAliveRequests="-1"/>
-  </httpEndpoint> -->
+  </httpEndpoint>
 
- <!--  <mpMetrics authentication="false" /> -->
+  <mpMetrics authentication="false" />
   
 <!-- This is new property for 4Q to make JAPSIC application works like non-JAPIC -->
-<!--<webAppSecurity useLtpaSSOForJaspic="true" /> -->
+<webAppSecurity useLtpaSSOForJaspic="true" />
 
 <!-- This property was set to set custom cookie name to avoid conflict when using SSO -->
 <!--<webAppSecurity useOnlyCustomCookieName="true" ssoCookieName="mstCookie"/> -->  
@@ -123,3 +124,4 @@
 -->
         
 </server>
+Footer
