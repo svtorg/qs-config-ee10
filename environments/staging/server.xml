@@ -19,6 +19,7 @@
       <user name="persona1" password="ppersona1"/>
       <user name="persona2" password="ppersona2"/>
       <user name="persona3" password="ppersona3"/>
+      <user name="persona4" password="ppersona4"/>
     </basicRegistry>
   <mpMetrics authentication="false" />
   
