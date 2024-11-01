@@ -125,11 +125,10 @@
 
 	<httpOptions persistTimeout="300s" readTimeout="300s" writeTimeout="300s"/> 
 	
-	<logging  traceSpecification="com.ibm.ws.webcontainer*=all"
+	<logging  traceSpecification="com.ibm.ws.webcontainer*=all"/>
 <!--  
     <logging maxFileSize="100" traceSpecification="com.ibm.ws.svt.*=FINE"/>
 
 -->
         
 </server>
-Footer
