@@ -29,7 +29,7 @@
 <!-- This property was set to set custom cookie name to avoid conflict when using SSO -->
 <!--<webAppSecurity useOnlyCustomCookieName="true" ssoCookieName="mstCookie"/> -->  
  
-<!-- Replace DB server information below to connect to your own DB server -->
+<!-- Replace DB server information below to connect to your own DB server 
         <authData id="DBAuth" password="${env.DBPass}" user="${env.DBUser}"/>
 
 	<dataSource containerAuthDataRef="DBAuth" id="Messenger" jdbcDriverRef="JDBCDriver" jndiName="jdbc/Messenger" type="javax.sql.XADataSource">
@@ -41,7 +41,17 @@
 	  <fileset dir="/config/db2jars" id="db2jcc4" includes="db2jcc4.jar, db2jcc_license_cu.jar"/>
 	 </library>
 	</jdbcDriver>
+-->
+	<include location="${shared.resource.dir}/ease/db2/jdbc4.xml"/>
 
+<dataSource jndiName="jdbc/Messenger"  jdbcDriverRef="ease.db2jcc4">
+  <properties.db2.jcc serverName="<db2 hostname>"
+                      portNumber="<db2 port>"
+                      databaseName="MSGRDB"
+                      sslConnection="true"
+                      user="<db2 username>"
+                      password="{mydb.password}"/>
+</dataSource>
 <!-- This allows certificate client to use basic authentication if certificate authentication does not succeed -->
 <!--	<webAppSecurity allowFailOverToBasicAuth="true" useAuthenticationDataForUnprotectedResource="false"/> -->
 	
