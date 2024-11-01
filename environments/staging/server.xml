@@ -14,7 +14,12 @@
     <tcpOptions soReuseAddr="true"/> 
     <httpOptions maxKeepAliveRequests="-1"/>
   </httpEndpoint>
-
+	<!-- Basic Registry -->
+    <basicRegistry id="basic" realm="basicRealm">
+      <user name="persona1" password="ppersona1"/>
+      <user name="persona2" password="ppersona2"/>
+      <user name="persona3" password="ppersona3"/>
+    </basicRegistry>
   <mpMetrics authentication="false" />
   
 <!-- This is new property for 4Q to make JAPSIC application works like non-JAPIC -->
