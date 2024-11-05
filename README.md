@@ -1,1 +1,1 @@
-# sample-config
+#QuickSec configuration repo for quicksec ee10
