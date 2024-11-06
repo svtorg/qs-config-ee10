@@ -103,14 +103,14 @@
 			</security-role>
 <!-- These users are marked admin in the database. This role is used by MessengerEJB -->
 			<security-role name="admins">
-			   <user name="persona105"/>
+			   <user name="persona1"/>
 			   <user name="persona2"/>
 			   <group name="g1-10"/>	
 			   <special-subject type="ALL_AUTHENTICATED_USERS"/>
 			</security-role>
 
 			<security-role name="messengerUsers">
-				<user name="persona106"/>
+				<user name="persona3"/>
 				<special-subject type="ALL_AUTHENTICATED_USERS"/>
 			</security-role>
 <!-- These users are marked manager in the database. This role is used by MessengerEJB -->
@@ -120,12 +120,12 @@
 			</security-role>
 <!-- The below runas mapping could be commented for longrun, otherwise all the calls to delegateEJB will be as below mapped user rather than user entered from the web login. -->
 		 	<security-role name="RunAsSpecified_servlet"> 
-				 <run-as userid="persona108"/> 
+				 <run-as userid="persona4"/> 
 				 <!--<run-as userid="persona1"/> --> 
 			</security-role>
 <!-- delegateEJBBeanLevelRunAs applied to all the methods of delegateEJB so that all the outbound calls to messngerEJB will use this identity.-->	
 			<security-role name="delegateEJBBeanLevelRunAs">
-				<run-as userid="persona109"/> 
+				<run-as userid="persona5"/> 
 			</security-role>	
 <!-- This role is mapped to persona11 in the ibm-application-bnd.xml file. Below lines can be uncommented to override the binding mapping.   -->
 			<!--  <security-role name="delegateEJBMethodLevelRunAS"> <run-as userid="persona3"/> 
