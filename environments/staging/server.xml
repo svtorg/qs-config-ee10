@@ -48,7 +48,6 @@
   <properties.db2.jcc serverName="ec2-35-153-18-9.compute-1.amazonaws.com"
                       portNumber="60000"
                       databaseName="MSGRDB"
-                      sslConnection="true"
                       user="db2inst1"
                       password="db2passw0rd"/>
 </dataSource>
