@@ -3,7 +3,7 @@ app:
   maven:
     groupId: "QuickSec"
     artifactId: "QuickSec"
-    version: "ee9"
+    version: "ee10"
     type: ear
   instances:
     min: 2
