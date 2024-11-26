@@ -6,5 +6,5 @@ app:
     version: "ee10"
     type: ear
   instances:
-    min: 1
+    min: 2
     max: 3
