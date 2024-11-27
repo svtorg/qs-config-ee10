@@ -8,3 +8,4 @@ app:
   instances:
     min: 2
     max: 3
+  endpoints: public
