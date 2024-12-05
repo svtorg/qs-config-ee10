@@ -18,12 +18,19 @@
   <mpMetrics authentication="false" />
 
 	<!-- Basic Registry -->
-    <basicRegistry id="basic" realm="basicRealm">
+    <!-- <basicRegistry id="basic" realm="basicRealm">
       <user name="persona1" password="ppersona1"/>
       <user name="persona2" password="ppersona2"/>
       <user name="persona3" password="ppersona3"/>
       <user name="persona4" password="ppersona4"/>
-    </basicRegistry>
+    </basicRegistry> -->
+
+	
+	<ldapRegistry host="ec2-52-87-90-56.compute-1.amazonaws.com" baseDN="o=ibm,c=us" port="9389" ldapType="IBM Tivoli Directory Server" id="LDAP_tdirsrv" sslEnabled="false" name="o=ldap1" sslRef="LDAPSSLSettings">
+	
+	</ldapRegistry> 
+
+
 
 <!-- This is new property for 4Q to make JAPSIC application works like non-JAPIC -->
 <webAppSecurity useLtpaSSOForJaspic="true" />
@@ -32,6 +39,7 @@
 <!--<webAppSecurity useOnlyCustomCookieName="true" ssoCookieName="mstCookie"/> -->  
  
 <!-- Replace DB server information below to connect to your own DB server -->
+	<!--
         <authData id="DBAuth" password="dbinst1" user="db2inst1"/>
 
 	<dataSource containerAuthDataRef="DBAuth" id="Messenger" jdbcDriverRef="JDBCDriver" jndiName="jdbc/Messenger" type="javax.sql.XADataSource">
@@ -43,6 +51,19 @@
 	  <fileset dir="/root/liberty/ee11/db2jars1" id="db2jcc4" includes="db2jcc4.jar, db2jcc_license_cu.jar"/>
 	 </library>
 	</jdbcDriver>
+-->
+	<!-- Replace DB server information below to connect to your own DB server -->
+        	<include location="${shared.resource.dir}/ease/db2/jdbc4.xml"/>
+
+
+	<dataSource jndiName="jdbc/Messenger"  jdbcDriverRef="ease.db2jcc4">
+  <properties.db2.jcc serverName="ec2-52-87-90-56.compute-1.amazonaws.com"
+                      portNumber="60000"
+                      databaseName="MSGRDB"
+                      sslConnection="false"
+                      user="db2inst1"
+                      password="${DB2_password}"/>
+</dataSource>
 
 <!-- This allows certificate client to use basic authentication if certificate authentication does not succeed -->
 <!--	<webAppSecurity allowFailOverToBasicAuth="true" useAuthenticationDataForUnprotectedResource="false"/> -->
