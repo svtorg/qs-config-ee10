@@ -7,5 +7,5 @@ app:
     type: ear
   instances:
     min: 1
-    max: 15
+    max: 10
   endpoints: public
