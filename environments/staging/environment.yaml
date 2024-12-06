@@ -15,8 +15,8 @@ app:
     cpu: 2
   variables:
     - name: cert_defaultKeyStore
-      value: |
-            -----BEGIN CERTIFICATE-----
+      value: | 
+      -----BEGIN CERTIFICATE-----
 MIIF0jCCA7qgAwIBAgIUHrVXdkOWiwoYO96Tl23+O+DL2IMwDQYJKoZIhvcNAQEL
 BQAwIzEhMB8GA1UEAwwYbmVzdC1sZGFwLTEuZnlyZS5pYm0uY29tMB4XDTIzMDYx
 NjIwMzk1N1oXDTMzMDYxMzIwMzk1N1owIzEhMB8GA1UEAwwYbmVzdC1sZGFwLTEu
@@ -49,4 +49,5 @@ GXN9iyDvo1PQhLcbIP5tBGTw3LC8xgAYynzLqarE2nad4o9JoqKNFeXIxyfLB97N
 WhN7LhC1y9xLDE75by15CG+YadmZ91Jir8seePoYoq9bvc9ZjZKpj69UjWMTGfrS
 4+EMv51NHTm5NE8sKTGaJA/ZrsMV6KUlx90oI8NaEpoba5Tkv9u4OAii9uYUFmC3
 kEjnZSWi
------END CERTIFICATE----
+-----END CERTIFICATE-----
+             
