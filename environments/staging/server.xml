@@ -25,13 +25,17 @@
       <user name="persona4" password="ppersona4"/>
     </basicRegistry> -->
 
-	
+	<!--
 	<ldapRegistry host="ec2-52-87-90-56.compute-1.amazonaws.com" baseDN="o=ibm,c=us" port="9389" ldapType="IBM Tivoli Directory Server" id="LDAP_tdirsrv" sslEnabled="false" name="o=ldap1" sslRef="LDAPSSLSettings">
 	
+	</ldapRegistry> -->
+
+
+<ssl id="LDAPSSLSettings" keyStoreRef="defaultKeyStore" trustStoreRef="defaultKeyStore" />
+  <!--  <keyStore id="ldaptruststore" location="/config/trustStore.jks" type="JKS" password="passw0rd" /> -->
+	<ldapRegistry host="ec2-52-87-90-56.compute-1.amazonaws.com" baseDN="o=ibm,c=us" port="9636" ldapType="IBM Tivoli Directory Server" id="LDAP_tdirsrv" sslEnabled="true" name="o=ldap1" sslRef="LDAPSSLSettings">
+
 	</ldapRegistry> 
-
-
-
 <!-- This is new property for 4Q to make JAPSIC application works like non-JAPIC -->
 <webAppSecurity useLtpaSSOForJaspic="true" />
 
