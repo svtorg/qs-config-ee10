@@ -25,7 +25,7 @@
       <user name="persona4" password="ppersona4"/>
     </basicRegistry> -->
 
-	<ssl id="LDAPSSLSettings" keyStoreRef="defaultKeyStore" trustStoreRef="defaultKeyStore" />
+	<ssl id="LDAPSSLSettings" keyStoreRef="defaultKeyStore" trustStoreRef="defaultKeyStore" verifyHostname="false />
 	<ldapRegistry host="ec2-52-87-90-56.compute-1.amazonaws.com" baseDN="o=ibm,c=us" port="9636" ldapType="IBM Tivoli Directory Server" id="LDAP_tdirsrv" sslEnabled="true" name="o=ldap1" sslRef="LDAPSSLSettings">
 	
 	</ldapRegistry> 
