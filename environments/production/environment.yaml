@@ -13,7 +13,7 @@ app:
     # The vCPU number for the application. If not set, it defaults to 1 vCPU. 
     # The max number of vCPU that can be requested is 14.
     cpu: 1
-  variables:
+  env:
     - name: cert_defaultKeyStore
       value: | 
         -----BEGIN CERTIFICATE-----
