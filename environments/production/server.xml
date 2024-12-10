@@ -33,7 +33,7 @@
 
 
 <!-- This is new property for 4Q to make JAPSIC application works like non-JAPIC -->
-<!-- <webAppSecurity useLtpaSSOForJaspic="true" /> -->
+<webAppSecurity useLtpaSSOForJaspic="true" />
 
 <!-- This property was set to set custom cookie name to avoid conflict when using SSO -->
 <!--<webAppSecurity useOnlyCustomCookieName="true" ssoCookieName="mstCookie"/> -->  
