@@ -151,7 +151,7 @@ he web login. -->
 	</application>  
 
 	<httpOptions persistTimeout="300s" readTimeout="300s" writeTimeout="300s"/> 
-
+	<logging maxFileSize="400" maxFiles="10" traceSpecification="com.ibm.ws.webcontainer.*=all=enabled"/>
 <!--  
     <logging maxFileSize="100" traceSpecification="com.ibm.ws.svt.*=FINE"/>
 -->
