@@ -26,7 +26,7 @@
     </basicRegistry> -->
 	<ssl id="LDAPSSLSettings" keyStoreRef="defaultKeyStore" trustStoreRef="defaultTrustStore" verifyHostname="false" />
 	<!--<ssl id="LDAPSSLSettings" keyStoreRef="defaultKeyStore" trustStoreRef="defaultKeyStore" verifyHostname="false" /> -->
-	<ldapRegistry host="ec2-52-87-90-56.compute-1.amazonaws.com" baseDN="o=ibm,c=us" port="9636" ldapType="IBM Tivoli Directory Server" id="LDAP_tdirsrv" sslEnabled="true" name="o=ldap1" sslRef="LDAPSSLSettings">
+	<ldapRegistry host="ec2-54-161-142-53.compute-1.amazonaws.com" baseDN="o=ibm,c=us" port="9636" ldapType="IBM Tivoli Directory Server" id="LDAP_tdirsrv" sslEnabled="true" name="o=ldap1" sslRef="LDAPSSLSettings">
 
 	</ldapRegistry>
 
@@ -57,7 +57,7 @@
 
 
 	<dataSource jndiName="jdbc/Messenger" jdbcDriverRef="ease.db2jcc4">
-		<properties.db2.jcc serverName="ec2-52-87-90-56.compute-1.amazonaws.com" portNumber="60000" databaseName="MSGRDB" sslConnection="false" user="db2inst1" password="${DB2_password}"/>
+		<properties.db2.jcc serverName="ec2-54-161-142-53.compute-1.amazonaws.com" portNumber="60000" databaseName="MSGRDB" sslConnection="false" user="db2inst1" password="${DB2_password}"/>
 	</dataSource>
 
 	<!-- This allows certificate client to use basic authentication if certificate authentication does not succeed -->
