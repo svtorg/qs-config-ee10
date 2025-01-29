@@ -13,9 +13,6 @@ app:
     # The vCPU number for the application. If not set, it defaults to 1 vCPU. 
     # The max number of vCPU that can be requested is 14.
     cpu: 1
-  systemProperties:
-    - name: "com.sun.jndi.ldap.object.disableEndpointIdentification"
-    - value: "true"
   env:
     - name: cert_defaultTrustStore
       value: | 
