@@ -7,7 +7,7 @@ app:
     type: ear
   instances:
     min: 1
-    max: 2
+    max: 3
   endpoints: public
   resources:
     # The vCPU number for the application. If not set, it defaults to 1 vCPU. 
