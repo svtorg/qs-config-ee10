@@ -19,7 +19,7 @@ app:
  #    value: "true"
   # List of variables that can be referenced in the server.xml
  # variables:
-  env:
+  variables:
     - name: cert_defaultKeyStore
       value: | 
         -----BEGIN CERTIFICATE-----
