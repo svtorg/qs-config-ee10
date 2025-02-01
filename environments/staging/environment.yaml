@@ -18,7 +18,7 @@ app:
  #   - name: "com.sun.jndi.ldap.object.disableEndpointIdentification"
  #    value: "true"
   # List of variables that can be referenced in the server.xml
-  variables:
+ # variables:
   env:
     - name: cert_defaultKeyStore
       value: | 
