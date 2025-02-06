@@ -19,6 +19,41 @@ app:
  #    value: "true"
   # List of variables that can be referenced in the server.xml
  # variables:
-  variables:
-    - name: cert_defaultKeyStore
-      value: abc
+  env:
+    - name: cert_defaultTrustStore
+      value: | 
+        -----BEGIN CERTIFICATE-----
+        MIIGEDCCA/igAwIBAgIUNLulZ/PK9xJu01gXW7qF3fGwvvowDQYJKoZIhvcNAQEL
+        BQAwIzEhMB8GA1UEAwwYbmVzdC1sZGFwLTEuZnlyZS5pYm0uY29tMB4XDTI0MTIx
+        MTE1MDMzNVoXDTM0MTIwOTE1MDMzNVowIzEhMB8GA1UEAwwYbmVzdC1sZGFwLTEu
+        ZnlyZS5pYm0uY29tMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzs0e
+        4jc/58JaiRSfWPy+OuAqINMHUy4Ofwqd/gH8iuUsmw1zOAveBl23Ecz1hgKkw/0c
+        ei5ZhbiZvnTMkcJPqX3MV0XhCB3i2yww7/t8qLZt+HZXQU0IqyKBCNM49O/O3xsI
+        zwq2URPV7AGoNrtDkEP6M6yb+V6kmzCgm75krhgFQTT27LuRC4LEtmsZCeeMq+1N
+        yaTRyzVPS17yjDnIar/Vi1OmiFNVf+2nDlL7LYwTVyuRTOE+ANkJOzoqFjdczWxn
+        Zbe3VSfAz568t82FJd0rbMR/d4DNyQtzi8jTgRLPuOdGcT+SZsWuBoZsglqv2Em0
+        v4UFWTuOK2ExcI8PF1yMo6g5UZ0NpePVWOOVkX2uaoe7b0ZF2dYkD3wEpAJve+XP
+        e9RHA/y/9pXWAqQFXu3R7wU9HMspsJ3A1xwb7v65LKmoz7lfKAfvkY1AvWMZlJzI
+        joz0GDXnyKDN5Natpqc+yUubtlh66zXLQ4Gft2YEsg63+Vzt6KNdPwO2Dai+K50c
+        WMHaw7/csUT853C1anptPe/G4DZFEKay6Q3CixEi92hNJtpffJ++ZMEcEFGUMyJj
+        yUXZxbimkHvWOGkWleYCtHRFMUexxwz6hMfbVS/cr3HaMRw8IRD95D7cOrfBEHJH
+        +3/rncfckykPVa9+0WY1d2OpJ37aKNQaEyNop8kCAwEAAaOCATowggE2MIIBEwYD
+        VR0RBIIBCjCCAQaCGG5lc3QtbGRhcC0xLmZ5cmUuaWJtLmNvbYIYbmVzdC1sZGFw
+        LTIuZnlyZS5pYm0uY29tghhuZXN0LWxkYXAtMy5meXJlLmlibS5jb22CLHN2dC1v
+        cGVubGRhcC5uZXN0LW9wZW5sZGFwLnN2Yy5jbHVzdGVyLmxvY2FsghluZXN0LWxk
+        YXB4LTEuZnlyZS5pYm0uY29tghluZXN0LWxkYXB4LTIuZnlyZS5pYm0uY29tghlu
+        ZXN0LWxkYXB4LTMuZnlyZS5pYm0uY29tghxuZXN0LWxkYXAtc3ZsLTEuZnlyZS5p
+        Ym0uY29tghkqLmNvbXB1dGUtMS5hbWF6b25hd3MuY29tMB0GA1UdDgQWBBTtzVBc
+        Jz7nd5M9qvO6hBKnYqqwyDANBgkqhkiG9w0BAQsFAAOCAgEAF1pDNGtU2FQDdSuW
+        fP10JYBoIvpTXzdXurV/m+DZHpymVt+SWEcyU+fJp0rb6yB18EHnjhgRgXTnBe63
+        Mn5DrVct0mPxTuyiz8iuqIWahOh8QgNCIGFFjvACGjCx1lKDCOke76gHm4ntQQCX
+        q+0h69R0JW1MYvG2VoB8LgOTjpae5UMg1MxL6v9FA6j8yVKJDQ077TfMcBQm3kLQ
+        kMUyc7ZQBoHYOR8LFF+deaNOM3A6CbxDpSytXQK8Fuj6JUNGZ8+dAAD82aQ+oD5w
+        jbIbkZdLPSbaTEt8G8XL/ZWW2O/WUFg1faTgd+xVbLJUfwjN/PIgu8eB3Gs/LMTB
+        AvLeb8E/dhXHkBIt3X78i4vJfLHdSOyZb1KRJAcxaMsscQgHP7EuGP7YwboSGIWX
+        2rWO0Dw7tn28AF4DW9nDVamin+w++6i7sP9EZovZjkUYxrhngfaUPQ6VHr/s3U7V
+        /Xv9dxBgEOAnQxVQ/cxj0llP+5VCo8S7qk0SmsBi9NpcxGton2r5PA5kPCaGHxzC
+        f6yHwJU3Rvd6+E+xwsJGWAwSP/XPsmhg+6x6xCnSqB7vM5onRXUOuUguWL4hJzgy
+        b+Yo9P9i4tlhGSql4upwar+ExlJEbI3JJcFvCJ8Xl3Zs6HbRJwGqmz9hl+MHegcL
+        1vw99Wtw7H/r2hS5EPnFkea5hvY=
+        -----END CERTIFICATE-----
