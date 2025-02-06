@@ -9,16 +9,6 @@ app:
     min: 1
     max: 5
   endpoints: public
-  resources:
-    # The vCPU number for the application. If not set, it defaults to 1 vCPU. 
-    # The max number of vCPU that can be requested is 14.
-    cpu: 1
- # System property not needed as LDAP is updated with wildacrd cert
- # systemProperties:
- #   - name: "com.sun.jndi.ldap.object.disableEndpointIdentification"
- #    value: "true"
-  # List of variables that can be referenced in the server.xml
- # variables:
   env:
     - name: cert_defaultTrustStore
       value: | 
@@ -56,4 +46,14 @@ app:
         f6yHwJU3Rvd6+E+xwsJGWAwSP/XPsmhg+6x6xCnSqB7vM5onRXUOuUguWL4hJzgy
         b+Yo9P9i4tlhGSql4upwar+ExlJEbI3JJcFvCJ8Xl3Zs6HbRJwGqmz9hl+MHegcL
         1vw99Wtw7H/r2hS5EPnFkea5hvY=
-        -----END CERTIFICATE-----
+        -----END CERTIFICATE-----    
+  resources:
+    # The vCPU number for the application. If not set, it defaults to 1 vCPU. 
+    # The max number of vCPU that can be requested is 14.
+    cpu: 1
+ # System property not needed as LDAP is updated with wildacrd cert
+ # systemProperties:
+ #   - name: "com.sun.jndi.ldap.object.disableEndpointIdentification"
+ #    value: "true"
+  # List of variables that can be referenced in the server.xml
+ # variables:
